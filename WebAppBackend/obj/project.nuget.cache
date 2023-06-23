@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SVsmgqgJYp1NFlYJpSP0QyrVpmJo4QlYK/Sy9LqcIUejH4tqXkDR8DziCgI2S6X3FcLsoQUSL7LP6m1CW8P4mQ==",
+  "dgSpecHash": "u/uUlspPMj/UdBWdKly1Cdn7jHz/UrfuOjhp2B/DIT9TzcrOkuikd7UemUeqPhUPgTtP//kkXpUhmwSBAhrfvg==",
   "success": true,
-  "projectFilePath": "C:\\Rossano\\Teste_Backend\\WebAppBackend\\WebAppBackend.csproj",
+  "projectFilePath": "C:\\Rossano\\SnSys\\TesteSnSys\\WebAppBackend\\WebAppBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vinic\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Vinic\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",

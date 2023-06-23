@@ -2753,11 +2753,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Rossano\\Teste_Backend\\WebAppBackend\\WebAppBackend.csproj",
+      "projectUniqueName": "C:\\Rossano\\SnSys\\TesteSnSys\\WebAppBackend\\WebAppBackend.csproj",
       "projectName": "WebAppBackend",
-      "projectPath": "C:\\Rossano\\Teste_Backend\\WebAppBackend\\WebAppBackend.csproj",
+      "projectPath": "C:\\Rossano\\SnSys\\TesteSnSys\\WebAppBackend\\WebAppBackend.csproj",
       "packagesPath": "C:\\Users\\Vinic\\.nuget\\packages\\",
-      "outputPath": "C:\\Rossano\\Teste_Backend\\WebAppBackend\\obj\\",
+      "outputPath": "C:\\Rossano\\SnSys\\TesteSnSys\\WebAppBackend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Vinic\\AppData\\Roaming\\NuGet\\NuGet.Config",

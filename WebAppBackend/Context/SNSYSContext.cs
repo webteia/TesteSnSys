@@ -26,7 +26,7 @@ namespace WebAppBackend.Context
         public DbSet<Cliente> Clientes { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("User ID=postgres;Password=changeme;Host=localhost;Port=5432;Database=myDataBase;");
+            optionsBuilder.UseNpgsql("User ID=postgres;Password=changeme;Host=postgres;Port=5432;Database=myDataBase;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
