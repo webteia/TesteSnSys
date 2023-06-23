@@ -1,0 +1,56 @@
+version: '3.5'
+
+services:
+  webappbackend:
+    container_name: 'WebAppBackend'
+    image: 'webappbackend:dev'
+    build:
+      context: ./WebAppBackend
+      dockerfile: Dockerfile
+    ports:
+      - '49155:80'
+    depends_on:
+      - postgres
+    networks:
+      - postgres-net
+
+  postgres:
+    container_name: postgres_db_container
+    image: postgres
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "changeme"
+      POSTGRES_DB: "myDataBase"
+      PGDATA: /data/postgres
+    volumes:
+       - postgres:/data/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres-net
+    restart: unless-stopped
+  
+  pgadmin:
+    container_name: pgadmin_db_container
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+       - pgadmin:/var/lib/pgadmin
+
+    ports:
+      - "${PGADMIN_PORT:-5050}:80"
+    networks:
+      - postgres-net
+    restart: unless-stopped
+
+networks:
+  postgres-net:
+    driver: bridge
+
+volumes:
+    postgres:
+    pgadmin:
+
